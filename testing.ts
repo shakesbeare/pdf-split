@@ -1,5 +1,5 @@
 import { splitPdf } from "./pdf-split";
-import { test as splitList } from "./typing_and_test_data";
+import { test as splitList } from "./test_data";
 import * as path from "path";
 
 splitPdf(

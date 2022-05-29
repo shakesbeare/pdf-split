@@ -1,7 +1,7 @@
 import { PDFDocument } from "pdf-lib";
 import * as fs from "fs";
 import * as path from "path";
-import { _splitObj } from "./typing_and_test_data";
+import { SplitObj } from "./types";
 
 async function loadPdf(filename: string): Promise<PDFDocument> {
     // loads a pdf by filename
@@ -84,7 +84,7 @@ async function savePdfs(
  */
 async function splitPdf(
     pathToPdf: string,
-    splitArray: Array<typeof _splitObj>,
+    splitArray: Array<SplitObj>,
     outputPath: string
 ) {
     // Exposed function to execute the library

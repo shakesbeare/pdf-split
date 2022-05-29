@@ -1,12 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.test = exports._splitObj = void 0;
-const _splitObj = {
-    // For typing purposes
-    startPage: 0,
-    title: "undefined",
-};
-exports._splitObj = _splitObj;
+exports.test = void 0;
 const test = [
     {
         startPage: 1,
@@ -78,4 +72,4 @@ const test = [
     },
 ];
 exports.test = test;
-//# sourceMappingURL=typing_and_test_data.js.map
+//# sourceMappingURL=test_data.js.map

@@ -1,10 +1,6 @@
-const _splitObj: { startPage: number; title: string } = {
-    // For typing purposes
-    startPage: 0,
-    title: "undefined",
-};
+import { SplitObj } from "./types";
 
-const test: Array<typeof _splitObj> = [
+const test: Array<SplitObj> = [
     {
         startPage: 1,
         title: "1st Eb Alto Saxophone (Clarinet)",
@@ -75,4 +71,4 @@ const test: Array<typeof _splitObj> = [
     },
 ];
 
-export { _splitObj, test };
+export { test };
