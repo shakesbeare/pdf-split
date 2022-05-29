@@ -79,12 +79,12 @@ async function savePdfs(
 /**
  * @description Splits a pdf into files based on where each page starts and the filenames you want each resultant pdf to have.
  * @param {String} pathToPdf The path to the original pdf to be split
- * @param {Array} splitList An array containing objects of format { startPage: Number, title: String }
+ * @param {Array} splitArray An array containing objects of format { startPage: Number, title: String }
  * @param {String} outputPath A directory which already exists in which you want to place the resultant pdfs
  */
 async function splitPdf(
     pathToPdf: string,
-    splitList: Array<typeof _splitObj>,
+    splitArray: Array<typeof _splitObj>,
     outputPath: string
 ) {
     // Exposed function to execute the library
@@ -95,7 +95,7 @@ async function splitPdf(
     let splitMarkers: Array<number> = [];
     let fileNames: Array<string> = [];
 
-    splitList.forEach((obj) => {
+    splitArray.forEach((obj) => {
         splitMarkers.push(obj.startPage);
         fileNames.push(obj.title);
     });
