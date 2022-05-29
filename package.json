@@ -1,0 +1,17 @@
+{
+    "name": "pdf-split",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "tsc && node build/pdf-split.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "pdf-lib": "^1.17.1"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.36"
+    }
+}
