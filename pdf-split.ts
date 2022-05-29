@@ -1,7 +1,7 @@
 import { PDFDocument } from "pdf-lib";
 import * as fs from "fs";
 import * as path from "path";
-import { _splitObj } from "./tests";
+import { _splitObj } from "./typing_and_test_data";
 
 async function loadPdf(filename: string): Promise<PDFDocument> {
     // loads a pdf by filename
@@ -105,4 +105,4 @@ async function splitPdf(
     await savePdfs(pdfArray, fileNames, outputPath);
 }
 
-module.exports = splitPdf;
+export { splitPdf };

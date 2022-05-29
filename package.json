@@ -2,9 +2,11 @@
     "name": "pdf-split",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "build/pdf-split.js",
     "scripts": {
-        "test": "tsc && node build/pdf-split.js"
+        "test": "tsc && node build/pdf-split.js",
+        "prepublish": "tsc",
+        "build": "tsc"
     },
     "author": "",
     "license": "ISC",
